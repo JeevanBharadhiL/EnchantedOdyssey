@@ -1,0 +1,177 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: auto; /* Ensures the image covers the entire body */
+    background-repeat:auto;
+    background-attachment: auto ; /* Fixed background image */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+
+
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.brush-script {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+  }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+      
+}
+
+nav li {
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fantasy";
+    font-size: 25px;
+
+}
+
+
+
+.button-box {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid #717273; 
+    border-radius: 5px; 
+    
+    color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-box:hover {
+    background-color: #646667;
+  }
+
+
+
+
+  .homepage {
+    max-width: 800px; /* Adjusted max-width for better readability */
+    margin: 50px auto;
+    background-color: rgba(211, 211, 211, 0.893);
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased box shadow for a subtle effect */
+  }
+
+  .last {
+    max-width: 800px; /* Adjusted max-width for better readability */
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px; /* Increased padding for better spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased box shadow for a subtle effect */
+  }
+  
+  h2 {
+    color: #3498db; /* Set heading color */
+    margin-bottom: 10px; /* Added margin at the bottom of headings for spacing */
+  }
+  
+  p {
+    color: #555; /* Set paragraph text color */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Added margin at the bottom of paragraphs for spacing */
+  }
+  
+  /* Style the star emoji */
+  div span {
+    display: block; /* Make the star emoji a block element for better alignment */
+    font-size: 1.5em; /* Adjusted font size for the star emoji */
+    margin-top: 20px; /* Added margin at the top of the star emoji for spacing */
+  }
+  
+
+.t {
+    max-width: 1300px;
+    margin: 50px auto;
+    background-color: rgba(152, 152, 152, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(32, 32, 32, 0.1); 
+}
+.s {
+    margin: 10px auto;
+}
+
+/* Center-align the "Journey" box */
+.ox {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto; /* Add this line to center-align the box */
+    text-align: center; /* Add this line to center-align the text inside the box */
+  }
+  
+  /* Hover effect for the link */
+  .ox:hover {
+    background-color: #2980b9;
+  }
+  
+
+
+.article-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.meta {
+    color: #666;
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for the about page */
+.about-page {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Title - My Blog</title>
+
+
+
+    <script>
+        function searchFunction(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the value from the search input
+            var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+
+            // Get all content elements
+            var contentElements = document.querySelectorAll(".content");
+
+            // Remove previous highlights
+            removeHighlights();
+
+            // Counter for occurrences
+            var occurrences = 0;
+
+            // Loop through each content element
+            contentElements.forEach(function(contentElement) {
+                var contentText = contentElement.innerText.toLowerCase();
+
+                // Check if the content contains the search query
+                if (contentText.includes(searchQuery)) {
+                    occurrences += (contentText.match(new RegExp(searchQuery, 'g')) || []).length;
+
+                    // Highlight occurrences
+                    highlightOccurrences(contentElement, searchQuery);
+                }
+            });
+
+            // Show the number of occurrences
+            document.getElementById("searchResults").innerHTML = "<p>Search results for '" + searchQuery + "': " + occurrences + " occurrences</p>";
+        }
+
+        function highlightOccurrences(element, searchQuery) {
+            var content = element.innerHTML;
+            var regex = new RegExp(searchQuery, 'gi');
+            var highlightedContent = content.replace(regex, function(match) {
+                return '<span class="highlight">' + match + '</span>';
+            });
+            element.innerHTML = highlightedContent;
+        }
+
+        function removeHighlights() {
+            var highlightedElements = document.querySelectorAll(".highlight");
+            highlightedElements.forEach(function(element) {
+                element.classList.remove("highlight");
+            });
+        }
+    </script>
+
+    
+    
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><h1><a href="index.html" class="brush-script"> 🏕️ Enchanted Odyssey 🌍</a></h1></li>
+          </ul>
+        <ul>
+            <li><a href="index.html" class="button-box"> Home</a></li>
+            <li><a href="travel.html"  class="button-box"> Travel</a></li>
+            <li><a href="about.html"  class="button-box"> About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+
+
+    <form onsubmit="searchFunction(event)">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResults"></div>
+
+    <!-- Article Page -->
+    <div class="article-page">
+        <h2 style="font-family: 'Fantasy', serif;">Switzerland 🇨🇭 </h2>
+        <img src="Switzerland.jpeg" alt=" Switzerland">
+
+        <p class="meta"></p>
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">"Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned."</p>
+            <!-- Add the rest of your article content here -->
+        </div>
+        <a href="https://www.myswitzerland.com/en-in/">know more (click)</a>
+
+        ....................................................................................................................................................................................
+
+
+        <h1></h1>
+
+      
+        <h1></h1>
+        <h2 style="font-family: 'Fantasy', serif;"> Japan 🇯🇵</h2>
+        <img src="japan.jpeg" alt=" japan">
+
+        <p class="meta"></p>
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">"Discover the enchanting allure of Japan, where ancient traditions seamlessly blend with cutting-edge modernity. Immerse yourself in a land of cherry blossoms, serene temples, and bustling metropolises. From the historic streets of Kyoto to the dazzling skyline of Tokyo, Japan beckons with a tapestry of cultural treasures, culinary delights, and natural wonders. Whether you're savoring sushi at a local izakaya, exploring centuries-old shrines, or taking in the breathtaking views of Mount Fuji, every moment in Japan is a journey through time and an embrace of unparalleled beauty."</p>
+            <!-- Add the rest of your article content here -->
+        </div>
+        <a href="https://www.japan.travel/en/us/"> know more (click)</a>
+
+        <h1></h1>
+
+        ....................................................................................................................................................................................
+        <h1></h1>
+        <h1></h1>
+        <h2 style="font-family: 'Fantasy', serif;">China 🇨🇳 </h2>
+        <img src="china.jpeg" alt=" China">
+
+        <p class="meta"></p> 
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">"Embark on a mesmerizing journey through the heart of China, where ancient wonders harmoniously coexist with modern marvels. This captivating nation boasts a rich tapestry of history, culture, and breathtaking landscapes. Wander through the iconic Great Wall, a testament to centuries of architectural prowess, or lose yourself in the vibrant energy of bustling metropolises like Beijing and Shanghai. Discover the serene beauty of traditional gardens in Suzhou, immerse yourself in the mystical allure of the Forbidden City, and be awe-struck by the sheer scale of the Terracotta Army in Xi'an. China's diverse landscapes, from the picturesque karst mountains of Guilin to the futuristic skyline of Hong Kong, offer a visual feast for every traveler. Indulge your taste buds in a culinary adventure, savoring the diverse flavors of authentic Chinese cuisine. Join us on a journey that transcends time, where ancient traditions seamlessly blend with the pulse of a dynamic, modern nation. China, a kaleidoscope of experiences waiting to be explored."</p>
+            <!-- Add the rest of your article content here -->
+        </div>
+        <a href="https://www.travelchina.org.cn/en/index/index.shtml"> know more (click)</a>
+
+        <h1></h1>
+        ....................................................................................................................................................................................
+        
+        <h1></h1>
+        <h2 style="font-family: 'Fantasy', serif;"> India 🇮🇳 </h2>
+        <img src="india.jpeg" alt=" India">
+
+        <p class="meta"></p>
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">"Discover the enchanting tapestry of India, where ancient traditions and modern vibrancy converge. Immerse yourself in a kaleidoscope of colors, flavors, and cultures as you traverse this diverse land. From the iconic Taj Mahal to the serene backwaters of Kerala, India unfolds a myriad of landscapes and experiences. Indulge your senses in the bustling markets, savor the rich tapestry of cuisine, and witness the spirituality that permeates ancient temples and mosques. Whether exploring the vibrant streets of Delhi, the royal palaces of Rajasthan, or the tranquil beaches of Goa, every corner of India tells a story. Let the warm hospitality of its people and the palpable history beneath your feet make your journey an unforgettable adventure."</p>
+            <!-- Add the rest of your article content here -->
+        </div>
+        <a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html"> know more (click)</a>
+        ....................................................................................................................................................................................
+
+        <h1></h1>
+        <h2 style="font-family: 'Fantasy', serif;"> France 🇫🇷 </h2>
+        <img src="france.jpeg" alt=" France">
+
+        <p class="meta"></p>
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">
+                "Discover the timeless allure of France, where enchanting landscapes, rich history, and exquisite cuisine converge. From the iconic Eiffel Tower standing tall in the romantic city of Paris to the sun-kissed vineyards of Provence, each corner of this captivating country tells a story of art, culture, and joie de vivre. Indulge in the sophistication of French artistry, explore charming cobblestone streets, savor world-renowned wines, and immerse yourself in a tapestry of experiences that make France a perennial favorite among global travelers. Bienvenue en France—Welcome to a journey of elegance, passion, and unforgettable moments."</p>
+            <!-- Add the rest of your article content here -->
+        </div>
+        <a href="https://www.france.fr/en"> know more (click)</a>
+
+
+        ....................................................................................................................................................................................
+
+
+        <h1></h1>
+        <h2 style="font-family: 'Fantasy', serif;"> Maldives 🇲🇻 </h2>
+        <img src="maldives.jpeg" alt=" Maldives">
+
+        <p class="meta"></p>
+        <div class="content">
+
+            <p style="font-family: 'Times New Roman', serif;  text-align: justify;">"Discover paradise on Earth in the enchanting Maldives! Immerse yourself in the crystal-clear turquoise waters that gently lap against powdery white sand beaches, creating a breathtaking contrast against the vibrant greenery of palm-fringed islands. This tropical haven, composed of over 1,000 coral islands, offers a surreal blend of luxury and natural beauty. Whether you seek romantic seclusion in overwater bungalows, thrilling water sports in the vibrant coral reefs, or simply wish to bask in the sunsets that paint the sky with hues of orange and pink, the Maldives promises an unforgettable escape. Indulge in the tranquil serenity of this island paradise, where every moment feels like a postcard-worthy memory waiting to be captured."</p>
+           
+        </div>
+        <a href="https://visitmaldives.com/en"> know more (click)</a>
+
+
+        ....................................................................................................................................................................................
+        
+    </div>
+
+
+    
+    <footer>
+        <h3 style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">&copy;2023 Jeevan Bharadhi L </h3>
+    </footer>
+    
+</body>
+</html>

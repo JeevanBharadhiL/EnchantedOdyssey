@@ -1,0 +1,178 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: #f1ceef; /* Light gray background */
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Mobile-friendly font stack */
+}
+
+.article-page {
+    background-color: #b399bdcc; /* White background for the article page */
+    padding: 20px;
+}
+
+/* Basic styling for the navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.brush-script {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+  }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+      
+}
+
+nav li {
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fantasy";
+    font-size: 25px;
+
+}
+
+
+
+.button-box {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid #717273; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    
+    color: #fff; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-box:hover {
+    background-color: #646667; /* Hover background color */
+  }
+
+/* Styling for the article page */
+.article-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+body {
+    background-image: url('wallpaper.jpg');
+    backface-visibility: transparent 20%;
+    background-size: 100%; /* Ensures the image covers the entire body */
+    background-repeat:auto;
+    background-attachment: auto ; /* Fixed background image */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+.meta {
+    color: #666;
+    font-style: italic;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 7px;
+}
+
+
+
+/* Add margin and width to text below images */
+.content {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-page {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h2, p, .meta {
+        font-size: 18px; /* Adjust font size for better readability on mobile */
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+}
+
+
+
+/* Style for the search bar container */
+form {
+    display: flex;
+    margin: 5px;
+   width: 50%;
+}
+
+/* Style for the search input */
+#searchInput {
+    padding: 10px;
+    flex: 4;
+}
+
+/* Style for the search button */
+button {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for search results */
+#searchResults {
+    margin: 10px;
+}
+
+/* Style for highlighted text */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
